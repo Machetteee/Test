@@ -12,4 +12,5 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *bottleImageView;
 
+- (void)git;
 @end
