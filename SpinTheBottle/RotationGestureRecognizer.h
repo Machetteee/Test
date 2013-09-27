@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RotationGestureRecognizer.h
 //  SpinTheBottle
 //
 //  Created by Waris Ali on 7/20/13.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RotationGestureRecognizer : UIGestureRecognizer {
+    
+}
 
-@property (weak, nonatomic) IBOutlet UIImageView *bottleImageView;
+@property (nonatomic, assign) CGFloat rotation;
+
 
 @end

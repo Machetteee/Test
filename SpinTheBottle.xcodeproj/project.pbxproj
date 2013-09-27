@@ -18,6 +18,8 @@
 		C3D7B42F179B7692002C668C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D7B42E179B7692002C668C /* Default-568h@2x.png */; };
 		C3D7B432179B7692002C668C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D7B430179B7692002C668C /* MainStoryboard.storyboard */; };
 		C3D7B435179B7692002C668C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7B434179B7692002C668C /* ViewController.m */; };
+		C3D7B43E179B776F002C668C /* RotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7B43D179B776F002C668C /* RotationGestureRecognizer.m */; };
+		C3D7B444179B78EA002C668C /* coke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3D7B443179B78EA002C668C /* coke.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		C3D7B431179B7692002C668C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C3D7B433179B7692002C668C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C3D7B434179B7692002C668C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3D7B43C179B776F002C668C /* RotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationGestureRecognizer.h; sourceTree = "<group>"; };
+		C3D7B43D179B776F002C668C /* RotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationGestureRecognizer.m; sourceTree = "<group>"; };
+		C3D7B443179B78EA002C668C /* coke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coke.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +88,10 @@
 		C3D7B41E179B7692002C668C /* SpinTheBottle */ = {
 			isa = PBXGroup;
 			children = (
-				C3D7B427179B7692002C668C /* AppDelegate.h */,
-				C3D7B428179B7692002C668C /* AppDelegate.m */,
-				C3D7B430179B7692002C668C /* MainStoryboard.storyboard */,
-				C3D7B433179B7692002C668C /* ViewController.h */,
-				C3D7B434179B7692002C668C /* ViewController.m */,
+				C3D7B43F179B7857002C668C /* AppDelegate */,
+				C3D7B440179B786D002C668C /* StoryBoard */,
+				C3D7B441179B789C002C668C /* ViewControllers */,
+				C3D7B43B179B76FA002C668C /* CustomClasses */,
 				C3D7B41F179B7692002C668C /* Supporting Files */,
 			);
 			path = SpinTheBottle;
@@ -96,6 +100,7 @@
 		C3D7B41F179B7692002C668C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3D7B442179B78D3002C668C /* Images */,
 				C3D7B420179B7692002C668C /* SpinTheBottle-Info.plist */,
 				C3D7B421179B7692002C668C /* InfoPlist.strings */,
 				C3D7B424179B7692002C668C /* main.m */,
@@ -105,6 +110,49 @@
 				C3D7B42E179B7692002C668C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3D7B43B179B76FA002C668C /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7B43C179B776F002C668C /* RotationGestureRecognizer.h */,
+				C3D7B43D179B776F002C668C /* RotationGestureRecognizer.m */,
+			);
+			name = CustomClasses;
+			sourceTree = "<group>";
+		};
+		C3D7B43F179B7857002C668C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7B427179B7692002C668C /* AppDelegate.h */,
+				C3D7B428179B7692002C668C /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C3D7B440179B786D002C668C /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7B430179B7692002C668C /* MainStoryboard.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C3D7B441179B789C002C668C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7B433179B7692002C668C /* ViewController.h */,
+				C3D7B434179B7692002C668C /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3D7B442179B78D3002C668C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7B443179B78EA002C668C /* coke.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +211,7 @@
 				C3D7B42D179B7692002C668C /* Default@2x.png in Resources */,
 				C3D7B42F179B7692002C668C /* Default-568h@2x.png in Resources */,
 				C3D7B432179B7692002C668C /* MainStoryboard.storyboard in Resources */,
+				C3D7B444179B78EA002C668C /* coke.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +225,7 @@
 				C3D7B425179B7692002C668C /* main.m in Sources */,
 				C3D7B429179B7692002C668C /* AppDelegate.m in Sources */,
 				C3D7B435179B7692002C668C /* ViewController.m in Sources */,
+				C3D7B43E179B776F002C668C /* RotationGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
